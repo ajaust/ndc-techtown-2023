@@ -8,17 +8,17 @@
 ## Getting Started
 
 ```shell
-git clone https://github.com/Retraze/ndc-techtown-2022.git
-cd ndc-techtown-2022
+git clone https://github.com/Retraze/ndc-techtown-2023.git
+cd ndc-techtown-2023
 poetry install # installs the python dependencies
 poetry shell   # enters you into the virtual environment
 ```
 
 ## Workshop Resources:
 
-* Event: [NDC TechTown Kongsberg 2022](https://ndctechtown.com/workshops/python-proficiency/4e5273ab01d2)
-* Day 1: [Assignments](https://efficient-amaranthus-364.notion.site/Exercises-Day-1-c1b2113d12d7442fb294b114a6490875)
-* Day 2: [Assignments](https://efficient-amaranthus-364.notion.site/Exercises-Day-2-eae76999cce04b269965b4a0db7ec286)
+* Event: [NDC TechTown Kongsberg 2023](https://ndctechtown.com/workshops/python-proficiency/76edcd8f7b76)
+* Day 1: [Assignments](https://efficient-amaranthus-364.notion.site/Exercises-Day-1-4d31b4d7911b49a891bd6fbea0cc6286?pvs=4)
+* Day 2: [Assignments](https://efficient-amaranthus-364.notion.site/Exercises-Day-2-f3845ef70d3a4bf6a2c554e26911e481?pvs=4)
 
 
 ## Continued Reading

@@ -7,9 +7,9 @@ This module contains tests that comply with the assignment.
 import pytest
 import mock
 
-from techtown2022.music_player.business_logic import play_song
-from techtown2022.music_player.song import SongData
-from techtown2022.music_player.drm import DRMViolationError
+from techtown2023.music_player.business_logic import play_song
+from techtown2023.music_player.song import SongData
+from techtown2023.music_player.drm import DRMViolationError
 
 
 @pytest.fixture

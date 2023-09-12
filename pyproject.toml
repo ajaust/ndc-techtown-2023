@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "techtown2022"
+name = "techtown2023"
 version = "1.0.0"
 description = "A workshop in intermediate to advanced Python"
 authors = [
