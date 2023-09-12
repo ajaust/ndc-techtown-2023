@@ -15,14 +15,14 @@ from techtown2022.music_player.drm import DRMViolationError
 @pytest.fixture
 def mocked_dbconnection(monkeypatch):
     mocked_dbconnection = mock.MagicMock()
-    monkeypatch.setattr("techtown2022.music_player.dbconn.DBConnection", mocked_dbconnection)
+    monkeypatch.setattr("techtown2023.music_player.dbconn.DBConnection", mocked_dbconnection)
     return mocked_dbconnection
 
 
 @pytest.fixture
 def mocked_audio_player(monkeypatch):
     mocked_audio_player = mock.MagicMock()
-    monkeypatch.setattr("techtown2022.music_player.audio_player.AudioPlayer", mocked_audio_player)
+    monkeypatch.setattr("techtown2023.music_player.audio_player.AudioPlayer", mocked_audio_player)
     return mocked_audio_player
 
 

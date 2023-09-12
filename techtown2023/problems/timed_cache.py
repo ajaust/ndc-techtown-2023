@@ -14,7 +14,7 @@ def timed_cache(*, timeout: float):
 
 
 # You can run this using:
-#   $ poetry run python -m techtown2022.problems.timed_cache
+#   $ poetry run python -m techtown2023.problems.timed_cache
 
 if __name__ == "__main__"_
     @timed_cache(timeout = 10)

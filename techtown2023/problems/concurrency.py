@@ -30,7 +30,7 @@ def submit_doubles(pool: ThreadPoolExecutor, data: list):
 
 
 # You can run this using:
-#   $ poetry run python -m techtown2022.problems.concurrency
+#   $ poetry run python -m techtown2023.problems.concurrency
 
 if __name__ == "__main__":
     class Pool():

@@ -1,7 +1,7 @@
 from . import format_table, convert_dicts_to_table, data
 
 # You can run this module as follow:
-#   $ poetry run python -m techtown2022.tabular_data
+#   $ poetry run python -m techtown2023.tabular_data
 
 if __name__ == "__main__":
     print(
