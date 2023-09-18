@@ -55,7 +55,7 @@ def even_only(data):
     return None
 
 def take_first_5(data):
-    # Return only the even elements (x % 2 == 0)
+    # HINT: itertools
     return None
 
 def reversed(data):
