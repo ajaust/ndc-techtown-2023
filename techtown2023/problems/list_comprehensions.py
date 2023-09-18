@@ -35,7 +35,7 @@ def compute_average(data):
     return None
 
 def compute_variance(data):
-    # Subtract the avarage from each item, raise them to the power of 2, then add them all together, then divide by number of elements
+    # Subtract the average from each item, raise them to the power of 2, then add them all together, then divide by number of elements
     return None
 
 def largest_element(data):
