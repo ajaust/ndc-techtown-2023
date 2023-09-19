@@ -32,46 +32,47 @@ MATRIX = [
 
 def compute_average(data):
     # Add all items together, then divide the result by the number of elements
-    return None
+    return sum(data) / len(data)
 
 def compute_variance(data):
     # Subtract the avarage from each item, raise them to the power of 2, then add them all together, then divide by number of elements
-    return None
+    avg = compute_average(data)
+    return sum((el-avg)**2 for el in data) / len(data)
 
 def largest_element(data):
     # Return the largest item in data
-    return None
+    return max(data)
 
 def smallest_element(data):
     # Return the smallest item in data
-    return None
+    return min(data)
 
 def every_third(data):
     # Return every third item in data
-    return None
+    return data[::3]
 
 def even_only(data):
     # Return only the even elements (x % 2 == 0)
-    return None
+    return [el for el in data if el % 2 == 0]
 
 def take_first_5(data):
     # Return only the even elements (x % 2 == 0)
-    return None
+    return data[:5]
 
 def reversed(data):
     # Return the data in reverse order
-    return None
+    return data[::-1]
 
 def flatten(nested_data):
     # Flatten a nested list into a normal list.
     # [[1, 2], [3, 4]] -> [1, 2, 3, 4]
-    return None
+    return [el for data in nested_data for el in data]
 
 def transpose(matrix):
     # Flip/mirror the matrix abouts its diagonal (the line from [0][0] to [-1][-1])
     # HINT: zip
     # HINT: unpacking
-    return None
+    return [row for row in zip(*matrix)]
 
 
 # You can run this module as follow:

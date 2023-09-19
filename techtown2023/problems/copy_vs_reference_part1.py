@@ -14,4 +14,4 @@ class User:
 
     # TASK: make a copy of the user, that is separate from the original
     def duplicate(self):
-        return self
+        return User(self.name, self.username, self.roles[:])

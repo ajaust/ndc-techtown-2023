@@ -7,50 +7,57 @@
 
 
 def get_string_length(string):
-    return 0
+    return len(string)
 
 # HINT: isinstance(x, bytes)
 def convert_to_string(something):
-    return something
+    return str(something) if type(something) is not bytes else something.decode("ascii")
 
 def make_uppercase(string):
-    return string
+    return string.upper()
 
 def make_lowercase(string):
-    return string
+    return string.lower()
 
 def take_first_3_characters(string):
-    return string
+    return string[:3]
 
 def take_every_other_character(string):
-    return string
+    return string[::2]
 
 def take_last_8_characters(string):
-    return string
+    return string[-8:]
 
 # HINT: str.split
 def count_words(string):
-    return string
+    return len(string.split())
 
 # HINT: str.join
 def remove_first_word(string):
-    return string
+    return " ".join(string.split()[1:])
 
 def censor_curse_words(string, list_of_bad_words):
     "this function replaces bad words with '***'"
-    return string
+    list_of_bad_words = [bad.lower() for bad in list_of_bad_words]
+    censored = []
+    for word in string.split():
+        if word.lower() in list_of_bad_words:
+            censored.append("***")
+        else:
+            censored.append(word)
+    return " ".join(censored)
 
 # HINT: ord, hex
 def convert_to_hexadecimal(string):
-    return string
+    return string.encode("utf-8").hex(sep=" ")
 
 # HINT:
 def convert_list_of_unicode_codepoints_to_string(list_of_codepoints):
-    return list_of_codepoints
+    return "".join(chr(code) for code in list_of_codepoints)
 
 def convert_list_of_ints_to_bytes(list_of_uint8):
-    return list_of_uint8
+    return bytes(list_of_uint8)
 
 # HINT: str.endswith
 def check_if_filename_has_filetype(filename: str, accepted_file_extensions: list) -> bool:
-    return False
+    return any(filename.lower().endswith("." + ext.lower()) for ext in accepted_file_extensions)

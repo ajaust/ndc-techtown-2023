@@ -16,8 +16,8 @@ class User:
 
     # TASK: make a copy of the user, that is separate from the original
     def make_copy(self):
-        return self
+        return copy.copy(self)
 
     # TASK: make a deep copy of the user, that is separate from the original
     def make_deep_copy(self):
-        return self
+        return copy.deepcopy(self)
